@@ -1,7 +1,13 @@
-.App {
-  text-align: center;
+* {
+  position: relative;
+  /* background-color: black; */
 }
-
+/* #Home{
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.pbHA3RygSnUuYIpO3thlYQHaFj&pid=Api&P=0);
+} */
+/* .homee{
+   background-image: ;
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +20,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +29,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
