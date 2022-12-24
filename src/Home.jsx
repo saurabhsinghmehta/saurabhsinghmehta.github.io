@@ -111,7 +111,7 @@ function Home() {
               />
             </Fade>
             {/* </Box> */}
-            <VStack width={"150%"}>
+            <VStack width={"100%"}>
               <Fade right cascade>
                 <HStack fontSize={"33px"}>
                   <Text className="hvr-underline-from-center" color={color}>
