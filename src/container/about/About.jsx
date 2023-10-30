@@ -11,7 +11,7 @@ import js from "../../assets/js.png";
 
 function About() {
   return (
-    <div className="portfolio__about section__padding">
+    <div className="portfolio__about section__padding" id="About">
       <div className="portfolio__about-aboutSection">
         <h1>About Myself</h1>
         <p>
@@ -20,7 +20,10 @@ function About() {
           like what you see and have a project you need coded, don’t hesitate to
           contact me.
         </p>
-        <p>LET'S CONNECT</p>
+        <a href="#Contact">
+          <p>LET'S CONNECT</p>
+        </a>
+
         <div className="portfolio__aboutSection-profileContent_socialhandles">
           <a
             href="https://github.com/saurabhsinghmehta"

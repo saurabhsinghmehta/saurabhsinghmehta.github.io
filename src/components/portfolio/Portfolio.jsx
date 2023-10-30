@@ -8,6 +8,8 @@ function Portfolio({
   techStack,
   direction = false,
   PortfolioImg,
+  live,
+  github,
 }) {
   const conditionalStyle = () => {
     return direction ? "projectContainerDirection__row-reverse" : "";
@@ -29,8 +31,14 @@ function Portfolio({
           ))}
         </div>
         <div className="projectContent__buttonStack">
-          <Button text={"Live"} />
-          <Button text={"Github"} />
+          <a href={live} target="_blank" rel={"noreferrer"}>
+            {" "}
+            <Button text={"Live"} />
+          </a>
+          <a href={github} target="_blank" rel={"noreferrer"}>
+            {" "}
+            <Button text={"Github"} />
+          </a>
         </div>
       </div>
     </div>

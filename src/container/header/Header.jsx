@@ -31,7 +31,9 @@ function Header() {
           </p>
         </div>
         <div>
-          <p>LET'S CONNECT</p>
+          <a href="#Contact">
+            <p>LET'S CONNECT</p>
+          </a>
         </div>
 
         <div className="portfolio__header-profileContent_socialhandles">
