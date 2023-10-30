@@ -1,0 +1,114 @@
+.portfolio__portfolioComp {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px;
+  margin-bottom: 5rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__portfolioComp:hover {
+  border: 1px solid #a7aeff;
+  border-radius: 5px;
+}
+.projectContainerDirection__row-reverse {
+  flex-direction: row-reverse;
+}
+.portfolio__portfolioComp-projectImg {
+  min-width: 300px;
+  width: 500px; /* Set the width of the container */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio__portfolioComp-projectImg img {
+  width: 100%;
+  border-radius: 10px;
+  min-width: 250px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.portfolio__portfolioComp-projectImg:hover img {
+  transform: scale(1.1);
+}
+.portfolio__portfolioComp-projectContent {
+  padding: 2rem;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+.portfolio__portfolioComp-projectContent h1 {
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #091e42;
+}
+.portfolio__portfolioComp-projectContent > p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 700px;
+  margin-top: 10px;
+}
+
+.projectContent__techStack {
+  display: flex;
+  gap: 3rem;
+}
+.projectContent__techStack p {
+  color: #6070ff;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-top: 25px;
+}
+.projectContent__buttonStack {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 770px) {
+  .portfolio__portfolioComp {
+    flex-direction: column;
+    text-align: left;
+  }
+  .portfolio__portfolioComp-projectImg {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio__portfolioComp {
+    padding: 0 5rem;
+  }
+  .portfolio__portfolioComp-projectImg {
+    width: 300px;
+  }
+  .portfolio__portfolioComp-projectContent h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .portfolio__portfolioComp-projectContent > p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+
+  .projectContent__techStack p {
+    color: #6070ff;
+    font-size: 13px;
+    line-height: 25px;
+  }
+}

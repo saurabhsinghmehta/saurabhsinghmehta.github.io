@@ -1,0 +1,86 @@
+.portfolio__about {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio__about-aboutSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 0 0 0 5rem;
+  gap: 1rem;
+}
+.portfolio__about-aboutSection h1 {
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+}
+.portfolio__about-aboutSection p:nth-child(2) {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 450px;
+  min-width: 300px;
+}
+.portfolio__about-aboutSection p:nth-child(3) {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.portfolio__aboutSection-profileContent_socialhandles {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.portfolio__about-skillSection {
+  display: flex;
+  padding: 0 5rem 0 0;
+  flex-direction: column;
+  min-height: 200px;
+  margin: 4rem;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 880px) {
+  .portfolio__about-aboutSection {
+    padding: 0 0 0 4rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .portfolio__about-aboutSection {
+    padding: 0 0 0 2rem;
+  }
+  .portfolio__about-skillSection {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio__about {
+    flex-direction: column;
+  }
+
+  .portfolio__about-skillSection {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .portfolio__about-aboutSection {
+    margin: 0 0 0 4rem;
+  }
+  .portfolio__about-skillSection {
+    padding: 0 2rem;
+  }
+}

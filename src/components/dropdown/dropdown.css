@@ -1,0 +1,72 @@
+.portfolio__about-skillSection-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__about-skillSection_dropdownPalate {
+  display: flex;
+  width: 500px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portfolio__about-skillSection_dropdownPalate h4 {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #344563;
+}
+.portfolio__about-skillSection_dropdownDivShow {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.portfolio__about-skillSection_dropdownDivShow img {
+  width: 50px;
+  margin: auto;
+}
+.portfolio__about-skillSection-dropdown > div:last-child {
+  display: none;
+  border-radius: 10rem;
+  padding-top: 2rem;
+  gap: 3rem;
+}
+
+#showDropdownDiv {
+  display: flex;
+}
+.portfolio__about-skillSection_dropdownDivShow p {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
+}
+@media screen and (max-width: 1150px) {
+  .portfolio__about-skillSection_dropdownPalate {
+    width: 250px;
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .portfolio__about-skillSection_dropdownPalate {
+    width: 250px;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .portfolio__about-skillSection_dropdownPalate {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio__about-skillSection_dropdownPalate {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .portfolio__about-skillSection_dropdownPalate {
+    width: 350px;
+  }
+}
